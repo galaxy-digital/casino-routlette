@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Grid } from '@mui/material';
 import { useSelector } from "react-redux";
 
+import chip0 from "../style/img/10.png"
 import chip1 from "../style/img/100.png"
 import chip2 from "../style/img/500.png"
 import chip3 from "../style/img/1k.png"
@@ -9,9 +10,12 @@ import chip4 from "../style/img/10k.png"
 import chip5 from "../style/img/50k.png"
 import chip6 from "../style/img/100k.png"
 import chip7 from "../style/img/500k.png"
-import chip8 from "../style/img/1m.png"
 
-const chipDatas = [
+const chipDatas = [,
+    {
+        img: chip0,
+        value: 10
+    },
     {
         img: chip1,
         value: 100
@@ -33,10 +37,7 @@ const chipDatas = [
     }, {
         img: chip7,
         value: 500000
-    }, {
-        img: chip8,
-        value: 1000000
-    },
+    }
 ]
 
 function Chip({

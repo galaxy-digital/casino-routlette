@@ -1,9 +1,11 @@
 const axios = require("axios");
+var gen = require('random-seed');
 
 const patternNum = [
 	0, 32, 15, 19, 4, 21, 2, 25, 17, 34, 6, 27, 13, 36, 11, 30, 8, 23, 10, 5, 24,
 	16, 33, 1, 20, 14, 31, 9, 22, 18, 29, 7, 28, 12, 35, 3, 26,
 ];
+
 const OtherBetSet = {
 	dozen1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
 	dozen2: [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
@@ -20,12 +22,15 @@ const OtherBetSet = {
 		19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36,
 	],
 };
+
 const values = ["hlaf1", "hlaf2", "red", "black", "even", "odd"];
 
 const usersPoints = {};
 
 function rotateValue(user) {
-	var randomNum = Math.floor(Math.random() * 37);
+	var seed = "My seed";
+	var rand = gen(seed);
+	var randomNum = rand.range(37);
 	user.spinResult = patternNum[randomNum];
 	user.rotateNum = randomNum;
 	console.log(user.spinResult);

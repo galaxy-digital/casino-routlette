@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
 
+import cover10 from "../style/img/10.png";
 import cover100 from "../style/img/100.png";
 import cover500 from "../style/img/500.png";
 import cover1000 from "../style/img/1k.png";
@@ -8,7 +9,6 @@ import cover10000 from "../style/img/10k.png";
 import cover50000 from "../style/img/50k.png";
 import cover100000 from "../style/img/100k.png";
 import cover500000 from "../style/img/500k.png";
-import cover1000000 from "../style/img/1m.png";
 
 import $ from "jquery";
 
@@ -79,14 +79,14 @@ function BetTable({
     };
 
     const ChipsImgs = {
+        10: cover10,
         100: cover100,
         500: cover500,
         1000: cover1000,
         10000: cover10000,
         50000: cover50000,
         100000: cover100000,
-        500000: cover500000,
-        1000000: cover1000000
+        500000: cover500000
     }
 
     const OtherBetSet = {
