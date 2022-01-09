@@ -28,7 +28,7 @@
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run start\" ",
     "server": "nodemon ./server/server.js",
-    "start": "set PORT=3003 && react-scripts start",
+    "start": "set PORT=80 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
