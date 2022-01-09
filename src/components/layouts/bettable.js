@@ -68,6 +68,7 @@ function BetTable({
     setBetState
 }) {
     const ChipsCSS = {
+        10: "chip-10-cursor",
         100: "chip-100-cursor",
         500: "chip-500-cursor",
         1000: "chip-1k-cursor",
